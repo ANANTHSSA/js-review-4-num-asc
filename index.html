@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js review task</title>
+</head>
+<body>
+  
+    <button id="btn" onclick="red()">click</button>
+    <div class="result"></div>
+  
+    <script>
+    // let inp1=document.createElement('input');
+    // document.body.appendChild(inp1);
+    // let inp2=document.createElement('input');
+    // document.body.appendChild(inp2);
+    // let inp3=document.createElement('input');
+    // document.body.appendChild(inp3);
+    // let result=document.querySelector('.result');
+    
+   
+
+    // function red(){
+    //     if(inp1.value > inp2.value && inp1.value > inp3.value){
+    //             if(inp2.value > inp3.value){
+    //                 result.innerHTML=`${inp3.value},${inp2.value},${inp1.value}`;
+    //             }
+    //             else{
+    //                 result.innerHTML=`${inp2.value},${inp3.value},${inp1.value}`;
+    //             }
+    //         }
+    //         else if(inp2.value > inp1.value && inp2.value > inp3.value){
+    //              if(inp1.value > inp3.value){
+    //                 result.innerHTML=`${inp3.value},${inp1.value},${inp2.value}`;
+    //             }
+    //             else{
+    //                 result.innerHTML=`${inp1.value},${inp3.value},${inp2.value}`;
+    //             }
+    //         }
+    //         else{
+    //           if(inp2.value > inp1.value){
+    //             result.innerHTML=`${inp1.value},${inp2.value},${inp3.value}`; 
+    //          }   
+    //          else{
+    //             result.innerHTML=`${inp2.value},${inp1.value},${inp3.value}`;
+    //          }
+    //         }    
+    //     } 
+  
+     let a=prompt('enter the num a');
+    let b=prompt('enter the num b');
+    let c=prompt('enter the num c');
+    let d=prompt('enter the num d');
+
+    if(a > b && a > c && a > d){
+        if(b > c && b > d){
+            if(c > d){
+                document.write(a,b,c,d);
+            }
+        else{
+                document.write(a,b,d,c);    
+        }
+    }
+        else if(c>b && c>d){
+            if(b>d){
+                document.write(a,c,b,d);
+            }         
+            else{
+                document.write(a,c,d,b);
+            }
+        }
+        else if(d>c && d>b){
+            if(c>b){
+                document.write(a,d,c,b);
+            }
+            else{
+                document.write(a,d,b,c);
+            }
+        }
+     }
+     else if(b>c && b>d && b>a){
+        if(c>d && c>a){
+            if(d>a){
+                document.write(b,c,d,a);
+            }
+            else{
+                document.write(b,c,a,d);
+            }
+        }
+        else if(a>c && a>d){
+            if(c>d){
+                document.write(b,a,c,d);
+            }
+            else{
+                document.write(b,a,d,c);
+            }
+        }
+        else if(d>c && d>a){
+            if(c>a){
+                document.write(b,d,c,a);
+            }
+            else{
+                document.write(b,d,a,c);
+            }
+        }
+     }
+     else if(c>d && c>a && c>b){
+    if( d>a && d>b){
+         if(a>b){
+            document.write(c,d,a,b)
+         }
+         else{
+            document.write(c,d,b,a)
+         }
+    }
+    else if(a>b && a>d ){
+         if(b>d){
+            document.write(c,a,b,d)
+         }
+         else{
+            document.write(c,a,d,b)
+         }
+    }
+    else if( b>d && b>a){
+        if(d>a){
+            document.write(c,b,d,a)
+        }
+        else{
+            document.write(c,b,a,d)
+        }
+    }
+}
+        else if(c>a && d>b && d>c ){
+            if((a>b && a>c)){
+                if(b>c){
+                    document.write(d,a,b,c)
+                }
+                else{
+                    document.write(d,a,c,b)
+                }
+            }
+            else if(b>a && b>c){
+                if(c>a){
+                    document.write(d,b,c,a)
+                }
+                else{
+                    document.write(d,b,a,c)
+                }
+            }
+            else if(c>a && c>b){
+                if(a>b){
+                    document.write(d,c,a,b)
+                }
+                else{
+                    document.write(d,c,b,a)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
